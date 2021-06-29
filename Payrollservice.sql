@@ -36,3 +36,13 @@ UPDATE EmployeePayroll set Gender ='Male' where EmployeeName='Roshan Thakur'
 UPDATE EmployeePayroll set Gender ='Male' where EmployeeName='Vivek Verma'
 UPDATE EmployeePayroll set Gender ='Female' where EmployeeName='Puja Raj'
 UPDATE EmployeePayroll set Gender ='Female' where EmployeeName='Rekha'
+
+--UC7 Use of Sum, Avg, Min, Max, Count Functions
+Select SUM(Salary) from EmployeePayroll
+Select AVG(Salary) from EmployeePayroll
+Select MIN(Salary) from EmployeePayroll
+Select MAX(Salary) from EmployeePayroll
+Select Count(EmployeeID) from EmployeePayroll
+Select SUM(Salary) from EmployeePayroll where Gender = 'Female' GROUP BY Gender;
+Select SUM(Salary) from EmployeePayroll where Gender = 'Male' GROUP BY Gender;
+
