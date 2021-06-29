@@ -21,3 +21,7 @@ VALUES ('Kumar Shubham', 50000.00 , '2021-06-28'),
 
 --UC4-Select all data from Table
 select * from EmployeePayroll;
+
+--UC5-Salary Data for particular Employee and who have joined in a particular date Range
+Select Salary from EmployeePayroll Where EmployeeName='Kumar Shubham'
+Select Salary from EmployeePayroll Where StartDate BETWEEN CAST('2021-06-01' as date) and GetDate();
