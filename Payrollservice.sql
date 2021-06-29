@@ -65,7 +65,8 @@ NetPay float;
 
 --UC10-Insert Value for Terissa and update her details and also update details for remaining Employee
 Insert into EmployeePayroll(EmployeeName,Salary,StartDate)
-VALUES ('Terissa', 70000.00 , '2021-05-26')
+VALUES ('Terissa', 70000.00 , '2021-05-26'),
+	   ('Terissa', 90000.00 , '2021-05-26')
 UPDATE EmployeePayroll set Gender ='Female' where EmployeeName='Terissa'
 UPDATE EmployeePayroll set PhoneNumber ='9888886897', Department='Sales & Marketing', Address='Pune',BasicPay=25000, Deduction=3000,TaxablePay=1000,IncomeTax=200,NetPay=17000 where EmployeeName='Kumar Shubham'
 UPDATE EmployeePayroll set PhoneNumber ='9888846788', Department='HR', Address='Delhi',BasicPay=15000, Deduction=4000,TaxablePay=1000,IncomeTax=400,NetPay=19000 where EmployeeName='Abhishek Kumar'
@@ -74,4 +75,7 @@ UPDATE EmployeePayroll set PhoneNumber ='9878787777', Department='Installation',
 UPDATE EmployeePayroll set PhoneNumber ='9798989899', Department='HR', Address='Amritsar',BasicPay=30000, Deduction=5000,TaxablePay=1000,IncomeTax=200,NetPay=19000 where EmployeeName='Puja Raj'
 UPDATE EmployeePayroll set PhoneNumber ='9234567834', Department='Sales & Marketing', Address='Delhi',BasicPay=31000, Deduction=2000,TaxablePay=500,IncomeTax=300,NetPay=18000 where EmployeeName='Rekha'
 UPDATE EmployeePayroll set PhoneNumber ='7889809999', Department='Sales & Marketing', Address='Mumbai',BasicPay=35000, Deduction=2000,TaxablePay=1000,IncomeTax=200,NetPay=18000 where EmployeeName='Terissa'
+UPDATE EmployeePayroll set PhoneNumber ='7889809999', Department='Sales & Marketing', Address='Mumbai',BasicPay=35000, Deduction=2000,TaxablePay=1000,IncomeTax=200,NetPay=18000 where EmployeeName='Terissa'
+
+
 
