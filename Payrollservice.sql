@@ -18,3 +18,6 @@ VALUES ('Kumar Shubham', 50000.00 , '2021-06-28'),
 		('Vivek Verma',40000.00, '2021-09-25'),
 		('Puja Raj',42000.00, '2021-03-25'),
 		('Rekha',36000.00, '2021-02-15');
+
+--UC4-Select all data from Table
+select * from EmployeePayroll;
