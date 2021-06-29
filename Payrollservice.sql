@@ -54,3 +54,11 @@ Department varchar(30),
 Adreess varchar(30), 
 CONSTRAINT DF_Address DEFAULT 'Indian' FOR Address
 
+--UC9-Extend the EmployeePayroll table with Basic Pay,Deduction,Taxable Pay,Income Tax,Net Pay
+Alter Table EmployeePayroll Add
+BasicPay float,
+Deduction float,
+TaxablePay float,
+IncomeTax float,
+NetPay float;
+
