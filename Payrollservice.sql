@@ -25,3 +25,14 @@ select * from EmployeePayroll;
 --UC5-Salary Data for particular Employee and who have joined in a particular date Range
 Select Salary from EmployeePayroll Where EmployeeName='Kumar Shubham'
 Select Salary from EmployeePayroll Where StartDate BETWEEN CAST('2021-06-01' as date) and GetDate();
+
+--UC6 Add a column to the table and update gender at given condition
+Alter Table EmployeePayroll
+Add Gender varchar(32);
+
+UPDATE EmployeePayroll set Gender ='Male' where EmployeeName='Kumar Shubham'
+UPDATE EmployeePayroll set Gender ='Male' where EmployeeName='Abhishek Kumar'
+UPDATE EmployeePayroll set Gender ='Male' where EmployeeName='Roshan Thakur'
+UPDATE EmployeePayroll set Gender ='Male' where EmployeeName='Vivek Verma'
+UPDATE EmployeePayroll set Gender ='Female' where EmployeeName='Puja Raj'
+UPDATE EmployeePayroll set Gender ='Female' where EmployeeName='Rekha'
