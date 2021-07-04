@@ -49,9 +49,9 @@ Select SUM(Salary) from EmployeePayroll where Gender = 'Male' GROUP BY Gender;
 --Section 2:-(ER Diagram)
 --UC8-Extend the EmployeePayroll table with Phone, address and department
 Alter Table EmployeePayroll Add
-PhoneNumber varchar(10),
+PhoneNumber varchar(20),
 Department varchar(30),
-Address varchar(30), 
+Address varchar(30),
 CONSTRAINT DF_Address DEFAULT 'Indian' FOR Address
 
 --UC9-Extend the EmployeePayroll table with Basic Pay,Deduction,Taxable Pay,Income Tax,Net Pay
@@ -76,6 +76,4 @@ UPDATE EmployeePayroll set PhoneNumber ='9798989899', Department='HR', Address='
 UPDATE EmployeePayroll set PhoneNumber ='9234567834', Department='Sales & Marketing', Address='Delhi',BasicPay=31000, Deduction=2000,TaxablePay=500,IncomeTax=300,NetPay=18000 where EmployeeName='Rekha'
 UPDATE EmployeePayroll set PhoneNumber ='7889809999', Department='Sales & Marketing', Address='Mumbai',BasicPay=35000, Deduction=2000,TaxablePay=1000,IncomeTax=200,NetPay=18000 where EmployeeName='Terissa'
 UPDATE EmployeePayroll set PhoneNumber ='7889809999', Department='Sales & Marketing', Address='Mumbai',BasicPay=35000, Deduction=2000,TaxablePay=1000,IncomeTax=200,NetPay=18000 where EmployeeName='Terissa'
-
-
-
+ 
